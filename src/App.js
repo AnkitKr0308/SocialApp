@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Github from "./components/Github/Github";
-import GetGitInfo from "./components/Github/GetGitInfo";
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Routes>
         <Routes>
-          <Route loader={GetGitInfo} path="github" element={<Github />} />
+          <Route path="github" element={<Github />} />
         </Routes>
         <Footer />
       </div>
